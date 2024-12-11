@@ -1,0 +1,836 @@
+/*TODO: Font Families*/
+@font-face {
+    font-display: swap;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/gilroy-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/gilroy-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/gilroy-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/gilroy-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/gilroy-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/gilroy-800.woff2') format('woff2');
+}
+
+/*TODO: Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: 3px solid lime;
+}
+
+.container {
+    max-width: 1332px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*TODO: Header*/
+.header {
+    box-shadow: 0 4px 24px 0 #0000000F;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px;
+}
+
+.home__link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2C2B35;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    column-gap: 51px;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2C2B35;
+}
+
+.menu__btn {
+    width: 72px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1000px;
+    background: linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);
+    cursor: pointer;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F7F8F8;
+    transition: all 0.3s ease;
+}
+
+.menu__btn:hover {
+    border: 1px solid #43A548;
+    background: #fff;
+    color: #43A548;
+}
+
+.menu__btn:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.burger__wrapper {
+    display: none;
+}
+
+.burger__item {
+    list-style: none;
+}
+
+.burger__link {
+    text-decoration: none;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2C2B35;
+}
+
+.burger__btn {
+    width: 72px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1000px;
+    background: linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);
+    cursor: pointer;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F7F8F8;
+    transition: all 0.3s ease;
+}
+
+.burger__btn:hover {
+    border: 1px solid #43A548;
+    background-color: #fff;
+    color: #43A548;
+}
+
+.burger__btn:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+/*TODO: Media Queries*/
+
+@media screen and (width <= 767px) {
+    .header__inner {
+        padding: 20px;
+    }
+
+    .home__link {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger__wrapper {
+        display: block;
+    }
+
+    .burger__summary {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*TODO: Section-Hero*/
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 20px 60px;
+}
+
+.hero__left {
+    display: flex;
+    align-items: center;
+}
+
+.hl__inner {
+    max-width: 646px;
+    width: 100%;
+}
+
+.hl__title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 66px;
+    color: #2C2B35;
+}
+
+.hl__text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.hl__btn {
+    width: 249px;
+    height: 42px;
+    border: none;
+    border-radius: 1000px;
+    background-color: #43A548;
+    cursor: pointer;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F7F8F8;
+    transition: all 0.3s ease;
+}
+
+.hl__btn:hover {
+    border: 1px solid #43A548;
+    background-color: #fff;
+    color: #43A548;
+}
+
+.hl__btn:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.hr__image {
+    transition: all 0.8s ease-in-out;
+}
+
+.hr__image:hover {
+    transform: scale(1.1);
+    transition: all 0.8s ease-in-out;
+}
+
+/*TODO: Media Queries*/
+
+@media screen and (width <= 767px) {
+    .hero__inner {
+        flex-direction: column;
+    }
+
+    .hl__title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .hl__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .hl__btn {
+        width: 202px;
+        height: 37px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .hr__image {
+        width: 335px;
+        height: 327px;
+    }
+
+    .hr__image:hover {
+        transform: scale(1);
+    }
+}
+
+/*TODO: Section-Control*/
+.control {
+    background-color: #F7F8F8;
+}
+
+.control__inner {
+    padding: 61px 0 59px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.inventory__management {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.im__card1 {
+    max-width: 646px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.im__card1 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 14px;
+}
+
+.im__card1 > div > div {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #FDEAD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im__card1 > div > strong {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.im__card1 > p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6F7973;
+}
+
+.im__card1 > button {
+    margin-top: 32px;
+    padding: 10px 30px;
+    border: 1px solid #43A548;
+    border-radius: 1000px;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #43A548;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.im__card1 > button:hover {
+    background-color: #43A548;
+    color: #fff;
+}
+
+.im__card1 > button:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.im__card2 {
+    max-width: 646px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.im__card2 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 14px;
+}
+
+.im__card2 > div > div {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #EECFFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im__card2 > div > strong {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.im__card2 > p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6F7973;
+}
+
+.im__card2 > button {
+    margin-top: 32px;
+    padding: 10px 30px;
+    border: 1px solid #43A548;
+    border-radius: 1000px;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #43A548;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.im__card2 > button:hover {
+    background-color: #43A548;
+    color: #fff;
+}
+
+.im__card2 > button:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.im__card3 {
+    max-width: 424px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.im__card3 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 14px;
+}
+
+.im__card3 > div > div {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #DCFCFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im__card3 > div > strong {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.im__card3 > p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6F7973;
+}
+
+.im__card3 > button {
+    margin-top: 32px;
+    padding: 10px 30px;
+    border: 1px solid #43A548;
+    border-radius: 1000px;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #43A548;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.im__card3 > button:hover {
+    background-color: #43A548;
+    color: #fff;
+}
+
+.im__card3 > button:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.im__card4 {
+    max-width: 424px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.im__card4 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 14px;
+}
+
+.im__card4 > div > div {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #FBDCDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im__card4 > div > strong {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.im__card4 > p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6F7973;
+}
+
+.im__card4 > button {
+    margin-top: 32px;
+    padding: 10px 30px;
+    border: 1px solid #43A548;
+    border-radius: 1000px;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #43A548;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.im__card4 > button:hover {
+    background-color: #43A548;
+    color: #fff;
+}
+
+.im__card4 > button:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.im__card5 {
+    max-width: 424px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.im__card5 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 14px;
+}
+
+.im__card5 > div > div {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #D8DCFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im__card5 > div > strong {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.im__card5 > p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6F7973;
+}
+
+.im__card5 > button {
+    margin-top: 32px;
+    padding: 10px 30px;
+    border: 1px solid #43A548;
+    border-radius: 1000px;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #43A548;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.im__card5 > button:hover {
+    background-color: #43A548;
+    color: #fff;
+}
+
+.im__card5 > button:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.im__card6 {
+    max-width: 646px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.im__card6 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 14px;
+}
+
+.im__card6 > div > div {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #DAFCE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im__card6 > div > strong {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.im__card6 > p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6F7973;
+}
+
+.im__card6 > button {
+    margin-top: 32px;
+    padding: 10px 30px;
+    border: 1px solid #43A548;
+    border-radius: 1000px;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #43A548;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.im__card6 > button:hover {
+    background-color: #43A548;
+    color: #fff;
+}
+
+.im__card6 > button:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.im__card7 {
+    max-width: 646px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.im__card7 > div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 14px;
+}
+
+.im__card7 > div > div {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #FCFDD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im__card7 > div > strong {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.im__card7 > p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6F7973;
+}
+
+.im__card7 > button {
+    margin-top: 32px;
+    padding: 10px 30px;
+    border: 1px solid #43A548;
+    border-radius: 1000px;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #43A548;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.im__card7 > button:hover {
+    background-color: #43A548;
+    color: #fff;
+}
+
+.im__card7 > button:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+.gift__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    border-radius: 40px;
+    background: linear-gradient(252.7deg, #EBF5EB 17.34%, #EFFBF0 90.57%);
+    box-shadow: 0 4px 12px 0 #0000000D;
+}
+
+.gift__text {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #43A548;
+}
+
+.gift__btn {
+    width: 211px;
+    height: 42px;
+    border: none;
+    border-radius: 1000px;
+    background-color: #43A548;
+    cursor: pointer;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F7F8F8;
+    transition: all 0.3s ease;
+}
+
+.gift__btn:hover {
+    border: 1px solid #43A548;
+    background-color: #fff;
+    color: #43A548;
+}
+
+.gift__btn:active {
+    transform: scale(0.97);
+    transition: all 0.3s ease;
+}
+
+/*TODO: Media Queries*/
+
+@media screen and (width <= 767px) {
+}
