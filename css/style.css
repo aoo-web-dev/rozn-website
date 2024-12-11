@@ -833,4 +833,47 @@
 /*TODO: Media Queries*/
 
 @media screen and (width <= 767px) {
+    .control__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inventory__management {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .im__card1 {
+        width: 335px;
+    }
+
+    .im__card2 {
+        width: 335px;
+    }
+
+    .im__card3 {
+        width: 335px;
+    }
+
+    .im__card4 {
+        width: 335px;
+    }
+
+    .im__card5 {
+        width: 335px;
+    }
+
+    .im__card6 {
+        width: 335px;
+    }
+
+    .im__card7 {
+        width: 335px;
+    }
+
+    .gift__wrapper {
+        width: 335px;
+    }
 }
